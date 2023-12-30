@@ -1,7 +1,7 @@
-package com.kipper.emailservice.application;
+package br.pilgriman.emailservice.application;
 
-import com.kipper.emailservice.adapters.EmailSenderGateway;
-import com.kipper.emailservice.core.cases.EmailSenderUseCase;
+import br.pilgriman.emailservice.adapters.EmailSenderGateway;
+import br.pilgriman.emailservice.core.cases.EmailSenderUseCase;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

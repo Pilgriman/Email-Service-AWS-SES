@@ -1,4 +1,4 @@
-package com.kipper.emailservice.core.exceptions;
+package br.pilgriman.emailservice.core.exceptions;
 
 public class EmailServiceException extends RuntimeException {
 

@@ -1,11 +1,11 @@
-package com.kipper.emailservice.infra.ses;
+package br.pilgriman.emailservice.infra.ses;
 
 
+import br.pilgriman.emailservice.adapters.EmailSenderGateway;
 import com.amazonaws.AmazonServiceException;
 import com.amazonaws.services.simpleemail.AmazonSimpleEmailService;
 import com.amazonaws.services.simpleemail.model.*;
-import com.kipper.emailservice.adapters.EmailSenderGateway;
-import com.kipper.emailservice.core.exceptions.EmailServiceException;
+import br.pilgriman.emailservice.core.exceptions.EmailServiceException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -22,7 +22,7 @@ public class SesEmailSender implements EmailSenderGateway {
     @Override
     public void sendEmail(String toEmail, String subject, String body) {
         SendEmailRequest request = new SendEmailRequest()
-                .withSource("liveskipperdev@gmail.com")
+                .withSource("limaufrpe289@gmail.com")
                 .withDestination(new Destination().withToAddresses(toEmail))
                 .withMessage(new Message()
                         .withSubject(new Content(subject))
